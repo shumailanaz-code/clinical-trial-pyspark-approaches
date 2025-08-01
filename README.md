@@ -53,7 +53,7 @@ supporting them with visualizations. Each implementation includes additional exp
 ## 📁 Project Structure
 
 ```clinical-trial-pyspark-approaches/```
-```1. PySpark Dataframe Implementation.py # Analysis using PySpark DataFrames```
-```2. PySpark RDD Implementation.py # Analysis using PySpark RDDs```
-```3. PySpark SQL Implementation.py # Analysis using Spark SQL```
+```1. PySpark_dataframe_implementation.py # Analysis using PySpark DataFrames```
+```2. PySpark_RDD_implementation.py # Analysis using PySpark RDDs```
+```3. PySpark_SQL_implementation.py # Analysis using Spark SQL```
 ```4. README.md```
