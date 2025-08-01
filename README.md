@@ -1,77 +1,59 @@
-🧪 Clinical Trial Data Analysis using PySpark (RDD, DataFrame, SQL)
+# 🧪 Clinical Trial Data Analysis using PySpark (RDD, DataFrame, SQL)
 
-👩‍💻 Overview
+## 👩‍💻 Overview
+
 This project analyzes a real-world clinical trial dataset using three different PySpark paradigms:
 
-RDD-based implementation
+- 🔹 **RDD-based implementation**
+- 🔹 **DataFrame API**
+- 🔹 **Spark SQL**
 
-DataFrame API
+The objective is to extract meaningful insights from clinical trial data by addressing specific analytical questions and 
+supporting them with visualizations. Each implementation includes additional exploratory analysis beyond the core requirements.
 
-Spark SQL
+---
 
-As a data scientist tasked by a healthcare client, the goal is to derive insights from clinical trial records and support those insights with visualizations and aggregated statistics. Each method showcases a different way of working with big data using PySpark on Databricks.
+## 📌 Key Questions Answered
 
-🎯 Objectives
-The project addresses the following key questions:
+1. **📊 Total Number of Distinct Studies**  
+   Ensured that only unique studies were counted to avoid duplication.
 
-Total number of distinct studies
+2. **📁 Study Types & Frequencies**  
+   Listed all unique study types (from the `Type` column), ordered from most to least frequent.
 
-Frequency of each study type (sorted from most to least frequent)
+3. **🩺 Top 5 Medical Conditions**  
+   Extracted and ranked the five most frequently occurring conditions.
 
-Top 5 most common conditions in the dataset
+4. **🏥 Top 10 Non-Pharmaceutical Sponsors**  
+   Identified sponsors excluding pharmaceutical companies (as flagged in the `Parent Company` column), along with the number of trials each conducted.
 
-Top 10 non-pharmaceutical sponsors and their clinical trial counts
+5. **📅 Completed Studies in 2023 (Monthly)**  
+   Visualized the number of completed studies per month in 2023, alongside a data table with exact counts.
 
-Monthly count of completed studies in 2023, including:
+---
 
-📊 A bar graph
+## 🛠 Additional Features
 
-📋 A tabular summary
+- ✅ **Preprocessing**: Cleaned raw clinical data before analysis.
+- 📈 **Visualizations**: Graphs generated for key questions to aid interpretation.
+- 🔍 **Comparative Approach**: Each paradigm (RDD, DataFrame, SQL) presents an independent solution with added insights.
 
-Additionally, further exploratory analyses and data visualizations were included in each implementation to provide deeper insights.
+---
 
-🛠 Technologies Used
-Apache Spark (PySpark) in Databricks
+## 🛠 Technologies Used
 
-Spark RDD, DataFrame, SQL APIs
+- **Apache Spark (PySpark)** in **Databricks**
+- **Spark RDD**, **DataFrame**, and **SQL APIs**
+- **Matplotlib**, **Seaborn**, **Pandas** (for graphing)
+- **Jupyter Notebooks** / **Databricks Notebooks**
+- **Python**
 
-Matplotlib / Seaborn / Pandas (for graphing)
+---
 
-Jupyter Notebooks / Databricks Notebooks
+## 📁 Project Structure
 
-Python
-
-📁 Project Structure
-clinical-trial-pyspark-approaches/
-├── pyspark_dataframe.py       # Analysis using Spark DataFrame API
-├── pyspark_rdd.py             # Analysis using RDD transformations
-├── pyspark_sql.py             # Analysis using SQL queries
-└── README.md
-
-📊 Visualizations
-Each approach includes visual charts to enhance understanding:
-
-Bar charts for study types
-
-Frequency plots for conditions
-
-Monthly line/bar charts of completed trials (2023)
-
-Sponsor frequency comparisons
-
-📌 Data Preprocessing
-Before performing analysis, the following preprocessing steps were applied:
-
-Removed duplicates
-
-Handled missing values
-
-Extracted and formatted date fields
-
-Normalized text entries (e.g., company names)
-
-Filtered valid records for time-based analysis
-
-📚 Data Source
-The dataset is sourced from clinicaltrials.gov and https://violationtracker.goodjobsfirst.org/industry/pharmaceuticals.
-
+```clinical-trial-pyspark-approaches/```
+```1. PySpark Dataframe Implementation.py # Analysis using PySpark DataFrames```
+```2. PySpark RDD Implementation.py # Analysis using PySpark RDDs```
+```3. PySpark SQL Implementation.py # Analysis using Spark SQL```
+```4. README.md```
